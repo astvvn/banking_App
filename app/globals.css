@@ -133,12 +133,6 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Custom utilities (v4 needs @utility so they can be used with @apply) */
 @utility container {
   margin-inline: auto;
