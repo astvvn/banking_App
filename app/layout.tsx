@@ -39,7 +39,7 @@ export default function RootLayout({
       className={cn("antialiased", inter.variable, "font-sans", ibmPlexSerif.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider forcedTheme="light">{children}</ThemeProvider>
       </body>
     </html>
   )
