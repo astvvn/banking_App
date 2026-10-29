@@ -124,6 +124,7 @@
 
 /* v4 changed the default border color to currentColor; keep the v3 look */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -137,7 +138,8 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
-  @media (width >= 96rem) {
+
+  @media (width >=96rem) {
     max-width: 1400px;
   }
 }
@@ -166,6 +168,7 @@
 @utility no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -183,13 +186,16 @@
     height: 3px;
     border-radius: 2px;
   }
+
   &::-webkit-scrollbar-track {
     background: #dddddd;
   }
+
   &::-webkit-scrollbar-thumb {
     background: #5c5c7b;
     border-radius: 50px;
   }
+
   &::-webkit-scrollbar-thumb:hover {
     background: #7878a3;
   }
@@ -255,7 +261,7 @@
   }
 
   .sheet-content button {
-    @apply focus:ring-0! focus-visible:ring-transparent! focus:ring-offset-0! focus-visible:ring-offset-0! focus-visible:outline-none! focus-visible:border-none!;
+    @apply focus:ring-0 focus-visible:ring-transparent focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:outline-none focus-visible:border-none;
   }
 
   .text14_padding10 {
@@ -317,7 +323,7 @@
 
   /* Right sidebar */
   .right-sidebar {
-    @apply no-scrollbar! hidden! h-screen! max-h-screen! flex-col! border-l! border-gray-200! xl:flex! w-[355px]! xl:overflow-y-scroll!;
+    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll;
   }
 
   .profile-banner {
@@ -367,7 +373,7 @@
   }
 
   .transactions-account-balance {
-    @apply flex-center flex-col  gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white;
+    @apply flex-center flex-col gap-2 rounded-md bg-blue-25/20 px-4 py-2 text-white;
   }
 
   .header-box {
@@ -428,7 +434,7 @@
   }
 
   .plaidlink-default {
-    @apply flex justify-start! cursor-pointer gap-3 rounded-lg bg-transparent! flex-row;
+    @apply flex justify-start cursor-pointer gap-3 rounded-lg bg-transparent flex-row;
   }
 
   /* Auth */
@@ -483,7 +489,7 @@
   }
 
   .payment-transfer_btn {
-    @apply text-14! w-full! bg-bank-gradient! font-semibold! text-white! shadow-form!;
+    @apply text-14 w-full bg-bank-gradient font-semibold text-white shadow-form;
   }
 
   /* Root Layout */
@@ -527,7 +533,7 @@
 
   /* Sidebar */
   .sidebar {
-    @apply sticky left-0 top-0 flex h-screen w-fit flex-col  justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
+    @apply sticky left-0 top-0 flex h-screen w-fit flex-col justify-between border-r border-gray-200 bg-white pt-8 text-white max-md:hidden sm:p-4 xl:p-6 2xl:w-[355px];
   }
 
   .sidebar-logo {
